@@ -1,0 +1,29 @@
+﻿.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contato h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #f0c040;
+}
+
+.contato p,
+.direitos p {
+  margin: 4px 0;
+}
+
+.direitos {
+  display: flex;
+  align-items: center;
+}

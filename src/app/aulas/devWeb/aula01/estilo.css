@@ -1,0 +1,86 @@
+﻿#meuParagrafo {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: 2px solid #333; /* cor e espessura da linha */
+  border-radius: 8px;     /* cantos arredondados */
+  padding: 16px;          /* espaço interno */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.fieldset-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-hover {
+  width: 300px;
+  height: 200px; /* altura visível */
+  background-image: url("Image/escola.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+.imagem-hover:hover {
+  background-image: url("Image/image1.jpg"); /* certifique-se que imagem2.jpg também está na pasta */
+}
+.centralizar {
+  margin: 20px 0;
+}
+
+/* Só aplica centralização em telas menores que 768px */
+@media (max-width: 768px) {
+  .centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.botao {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #005fa3;
+}
+.botao-limpar {
+  background-color: #f77f00;
+}
+
+.botao-adicionar {
+  background-color: #00cc44;
+}
+
+.container-fieldsets {
+  display: flex;
+  justify-content: space-between; /* ou center, flex-start, etc */
+  gap: 20px; /* espaço entre os fieldsets */
+  flex-wrap: wrap; /* permite quebrar linha se não couber */
+}
+
+.container-fieldsets fieldset {
+  flex: 1; /* cada fieldset ocupa espaço igual */
+  min-width: 350px; /* largura mínima para evitar quebra feia */
+  max-width: 33%; /* opcional: limitar largura */
+}
+
+.centralizarNa-div {
+  display: flex;
+  justify-content: center;
+}
