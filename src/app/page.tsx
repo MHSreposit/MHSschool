@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: 'MHS - Math High Speed | Aprendizado e Programação IFMT',
   description: ' A jornada de aprendizado do Developer Natanael Figueiredo: projetos de programação e conhecimentos adquiridos na faculdade IFMT – Campus Campo Verde. Descubra aulas, projetos e tutoriais. ',
 
+  // Novo campo de verificação
+  verification: {
+    google: '7vaInzGYXuMT_tAvMe3-FYThdaBW0xRTHeVM27jxFS8', // Cole aqui o código dentro do 'content='
+  },
+  
   // Tags para o Google (comportamento de rastreamento)
   robots: 'index, follow', // Diz ao Google para indexar esta página e seguir os links.
 
@@ -50,7 +55,6 @@ export const metadata: Metadata = {
 
   // Palavras-chave relevantes (não muito usadas pelo Google, mas boas para organização)
   keywords: ['MHS', 'Next.js', 'Programação', 'IFMT', 'Natanael Figueiredo', 'Desenvolvimento Web', 'Aulas', 'Responsividade', 'css',],
-
 }
 
 export default function Home(){
